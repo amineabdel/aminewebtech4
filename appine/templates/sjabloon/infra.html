@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>data with parameter</h1>
+    {% for s in speed %}
+    <ul>
+        <li>infractions_speed: {{s}}</li>
+        <li>street : {{s.street}}</li>
+        <li>speed_limit : {{s.speed_limit}}</li>
+    </ul>
+
+    <br> {% endfor %}
+
+
+
+
+</body>
+
+</html>

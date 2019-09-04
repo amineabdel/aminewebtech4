@@ -4,13 +4,17 @@
 <body>
     <h1>data</h1>
 
+    <!-- {% for infr in infractions %}
+ <p>{{infr}}</p> -->
 
-    {% for m in movie %}
-    <p>movie: {{m}}</p>
+
     <ul>
-        {% for a in actor %}
-        <li>actor: {{a}}</li>
-        {% endfor %}
+        {% for infr in infractions %}
+        <li>street : {{infr.street}}</li>
+        <li>speed_limit : {{infr.speed_limit}}</li>
+        <li>infractions_speed : {{infr.infractions_speed}}</li>
+        <br> {% endfor %}
+
     </ul>
 
 
